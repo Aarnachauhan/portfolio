@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Hostel Complaint Management",
       desc: "A full-stack system for students and admins with Ml complaint classification.",
       tech: ["React", "Node.js", "MongoDB", "AI/NLP"],
-      link: "https://github.com/Aarnachauhan/hostel-complaint-system-"
+      link: "https://github.com/Aarnachauhan/Software-engineering-project"
     },
     {
       title: "Food Delivery Web App",
