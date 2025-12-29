@@ -1,0 +1,132 @@
+.projects {
+  padding: 100px 20px;
+  background-color: #050505; /* Deep black */
+  color: white;
+  min-height: 100vh;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects-title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00d2ff, #92fe9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: #00d2ff;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.projects-subtitle {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The Glowing Card Effect */
+.project-card {
+  position: relative;
+  background: #111;
+  border-radius: 20px;
+  padding: 2px; /* For the gradient border effect */
+  transition: all 0.4s ease;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #00d2ff;
+  box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
+}
+
+.card-content {
+  background: #111;
+  padding: 30px;
+  border-radius: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.card-content p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* Tech Badges */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.tech-badge {
+  background: rgba(0, 210, 255, 0.1);
+  color: #00d2ff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+/* GitHub Button */
+.card-footer {
+  margin-top: auto;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: #222;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+  border: 1px solid #333;
+}
+
+.github-link:hover {
+  background: #00d2ff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Coming Soon Style */
+.coming-soon {
+  border: 1px dashed #444;
+  opacity: 0.8;
+}
+
+.coming-soon:hover {
+  border-style: solid;
+}

@@ -1,0 +1,118 @@
+.achievements {
+  padding: 100px 20px;
+  background-color: #050505;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievements-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.achievements-title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #38bdf8, #facc15); /* Blue to Gold gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: #38bdf8;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.achievements-subtitle {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* THE GLOW CARD */
+.achievement-card {
+  background: #111;
+  border-radius: 20px;
+  padding: 1px; /* Gradient border container */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.card-content {
+  padding: 40px;
+  background: #111;
+  border-radius: 18px;
+  height: 100%;
+}
+
+/* Icons */
+.achievement-icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.tech-glow { color: #38bdf8; filter: drop-shadow(0 0 10px #38bdf8); }
+.gold-glow { color: #facc15; filter: drop-shadow(0 0 10px #facc15); }
+
+/* Badges */
+.achievement-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.blue { background: rgba(56, 189, 248, 0.1); color: #38bdf8; border: 1px solid #38bdf8; }
+.gold { background: rgba(250, 204, 21, 0.1); color: #facc15; border: 1px solid #facc15; }
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.achievement-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-card li {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.achievement-card li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .achievements-title { font-size: 2.2rem; }
+}
