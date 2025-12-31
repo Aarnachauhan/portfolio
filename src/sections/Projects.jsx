@@ -55,6 +55,7 @@ const Projects = () => {
         ))}
 
         {/* Coming Soon Card */}
+        
         <div className="project-card coming-soon">
           <div className="card-content">
             <h3>More Coming Soon 🚀</h3>
@@ -65,6 +66,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   );

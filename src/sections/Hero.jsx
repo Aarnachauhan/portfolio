@@ -5,7 +5,7 @@ import profile from "../assets/profile.jpg"; // <-- put your image here
 const Hero = () => {
   const texts = [
     "Full Stack Developer",
-    "MERN Stack Engineer",
+    
     "Problem Solver",
     "Building Real-World Products"
   ];

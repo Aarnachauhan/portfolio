@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { FaPhone } from 'react-icons/fa'
 import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
           {/* Brand / Location */}
           <div className="footer-section">
             <h3>Aarna Chauhan</h3>
-            <h2>Student</h2>
+           
             <p>Full-Stack Developer focused on building clean and user-friendly applications.</p>
 
             <div className="contact-item">
@@ -33,8 +34,8 @@ const Footer = () => {
             </div>
 
             <div className="contact-item">
-              <FaEnvelope />
-              <span>aarnac.ug23.cs@nitp.ac.in</span>
+              <FaPhone />
+              <span>+91 8826004270</span>
             </div>
           </div>
 
